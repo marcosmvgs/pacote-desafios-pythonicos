@@ -9,6 +9,7 @@ por 'good' e retorne a string resultante.
 Exemplo: 'The dinner is not that bad!' retorna 'The dinner is good!'
 """
 
+
 def not_bad(s):
     try:
         if s.index('not') < s.index('bad'):
@@ -16,7 +17,6 @@ def not_bad(s):
     except ValueError:
         pass
     return s
-
 
 
 def test(f, in_, expected):
