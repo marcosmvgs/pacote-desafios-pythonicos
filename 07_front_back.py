@@ -11,8 +11,8 @@ Finalmente, dadas duas strings a e b, retorne uma string na forma:
 a-frente + b-frente + a-trás + b-trás
 """
 def front_back(a, b):
-    # +++ SUA SOLUÇÃO +++
-    return
+    return a[:round(len(a) / 2 + 0.4)] + b[:round(len(b) / 2 + 0.4)] + a[round(len(a) / 2 + 0.4):] +\
+           b[round(len(b) / 2 + 0.4):]
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
