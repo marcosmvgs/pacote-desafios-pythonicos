@@ -8,9 +8,9 @@ e o último caracteres da cadeia são os mesmos.
 PS: Python não possui o operador ++, porém += funciona.
 """
 
+
 def match_ends(words):
-    # +++ SUA SOLUÇÃO +++
-    return
+    return sum(map(lambda x: len(x) >= 2 and x[0] == x[-1], words))
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
