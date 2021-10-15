@@ -12,8 +12,9 @@ antes de combina-las.
 """
 
 def front_x(words):
-    # +++ SUA SOLUÇÃO +++
-    return
+    result = list(filter(lambda x: x[0] == 'x', words.sort())) + \
+                list(filter(lambda x: x[0] != 'x', words.sort()))
+    return result
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
